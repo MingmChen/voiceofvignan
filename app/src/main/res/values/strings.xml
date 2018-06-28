@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Voice of Vignan</string>
+    <string name="title_activity_welcome">Welcome to VoV</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Events</string>
+    <string name="slide_1_desc">Why miss an event? We will let you know before it happen!</string>
+    <string name="slide_2_title"> Student Clubs</string>
+    <string name="slide_2_desc">Joining communities you love is easier now!</string>
+    <string name="slide_3_title">Campus News</string>
+    <string name="slide_3_desc">Let all our stories be heard and shared!</string>
+    <string name="slide_4_title">Push Notifications</string>
+    <string name="slide_4_desc">We know you are busy.We will notify you while something big happens!</string>
+    <string name="play_again_desc">
+To see the welcome slider again, goto Settings -> apps -> VoV -> clear data
+</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

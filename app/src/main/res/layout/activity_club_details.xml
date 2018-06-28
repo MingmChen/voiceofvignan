@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/clubimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@color/Recyclerbg"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/clubname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@id/clubimage"
+                />
+
+            <TextView
+                android:id="@+id/clubdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="viewStart"
+                android:lineSpacingExtra="8dp"
+                android:autoLink="all"
+                android:layout_below="@id/clubname"
+                />
+
+            <TextView
+                android:id="@+id/clubactivitiesheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Activities"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@id/clubdesc"
+                />
+
+            <TextView
+                android:id="@+id/clubactivities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="viewStart"
+                android:autoLink="all"
+                android:lineSpacingExtra="8dp"
+                android:layout_below="@id/clubactivitiesheader"
+                />
+
+            <TextView
+                android:id="@+id/clubteamheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Team"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@id/clubactivities"
+                />
+
+            <TextView
+                android:id="@+id/clubteam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_margin="8dp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/clubteamheader"
+                />
+
+            <TextView
+                android:id="@+id/clubcontactheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Contact"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@id/clubteam"
+                />
+
+            <TextView
+                android:id="@+id/clubcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:autoLink="all"
+                android:layout_below="@id/clubcontactheader"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dscviit.vov">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".ClubActivity"
+            android:label="Student Clubs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NewsActivity"
+            android:label="Campus News"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NewsDetails"
+            android:label="Campus News"
+            android:parentActivityName=".NewsActivity" />
+        <activity
+            android:name=".ClubDetails"
+            android:label="Student Clubs"
+            android:parentActivityName=".ClubActivity" />
+        <activity
+            android:name=".EventActivity"
+            android:label="Events"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EventDetails"
+            android:label="Events"
+            android:parentActivityName=".EventActivity" />
+        <activity
+            android:name=".DeveloperZone"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".AnnouncementActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".UserProfile"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".LoginActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notific  ation_icon"
+            android:resource="@drawable/app_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <activity android:name=".InAppBrowser" />
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

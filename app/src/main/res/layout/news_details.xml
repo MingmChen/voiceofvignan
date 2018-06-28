@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linearcredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/newscategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/newspostedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/newsheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
+                android:layout_below="@+id/linearcredits"
+                />
+
+            <ImageView
+                android:id="@+id/newsthumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/newsheader"/>
+
+
+
+
+            <TextView
+                android:id="@+id/newscontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsthumbnail"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp"
+                android:autoLink="all"
+
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
